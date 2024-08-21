@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-nfndsknklnfknkdsmvkm
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,16 +9,38 @@ nfndsknklnfknkdsmvkm
 </head>
 
 <body>
-    <div class="bg">
-        <div class="heading">
-            <h1>Calculator iMath</h1>
-        </div>
-
+    <header>
+        <h1>
+            iMath Calculator
+        </h1>
+    </header>
+    <main>
         <div class="calculator">
-            <div class="display"></div>
+            <div class="display" id="display"></div>
+            <div class="buttons">
+                <button class="btn" data-action="clear">C</button>
+                <button class="btn" data-action="delete">DEL</button>
+                <button class="btn" data-action="append" data-value="%">%</button>
+                <button class="btn" data-action="append" data-value="/">/</button>
+                <button class="btn" data-action="append" data-value="7">7</button>
+                <button class="btn" data-action="append" data-value="8">8</button>
+                <button class="btn" data-action="append" data-value="9">9</button>
+                <button class="btn" data-action="append" data-value="*">x</button>
+                <button class="btn" data-action="append" data-value="4">4</button>
+                <button class="btn" data-action="append" data-value="5">5</button>
+                <button class="btn" data-action="append" data-value="6">6</button>
+                <button class="btn" data-action="append" data-value="-">-</button>
+                <button class="btn" data-action="append" data-value="1">1</button>
+                <button class="btn" data-action="append" data-value="2">2</button>
+                <button class="btn" data-action="append" data-value="3">3</button>
+                <button class="btn" data-action="append" data-value="+">+</button>
+                <button class="btn" data-action="append" data-value="0">0</button>
+                <button class="btn" data-action="append" data-value=".">.</button>
+                <button class="btn btn2" data-action="calculate">=</button>
+            </div>
         </div>
-    </div>
-
+    </main>
+    <script src="script.js"></script>
 </body>
 
 </html>
