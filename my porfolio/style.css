@@ -13,11 +13,13 @@ body{
 .logo{
     display: flex;
     align-items: center;
+    justify-content: center;
     margin: 26px;
 }
 
 .logo h1{
-    font-size: 2vw;
+    font-size: 2.2vw;
+    color: #FF652F;
 }
 
 .logo img{
@@ -31,8 +33,11 @@ body{
     width: 100%;
 }
 
-.connect{
+
+.logo-link{
+    height: 4vh;
     position: relative;
+    z-index: 100;
 }
 
 .logo-link img{
@@ -40,19 +45,14 @@ body{
     border-radius: 8px;
 }
 
-
 .about {
     position: relative;
-    /* padding-top: 10vh; */
-    /* margin: 5vh 0; */
 }
 
 .image-container{
-    /* position: relative; */
     position: absolute;
     height: 80vh;
     width: 100%;
-    /* border: 2px solid red; */
     opacity: 0;
     transition: opacity 1s ease-in-out;
     z-index:1000;
@@ -125,32 +125,21 @@ body{
     }
 }
 
+.headings{
+    margin: 30px 10px 20px 10px;
+    font-size: 4rem;
+}
+
 #skills {
-    margin-top: 85vh; /* Match this value to the height of the about section */
+    margin-top: 85vh; 
 } 
 
-
-.fixed-header{
-    /* background-image: url('header.jpeg');
-    background-repeat: no-repeat; */
-    color: #FF652F;
-    /* background-color: #272727; */
-    position: fixed;
-    width: 100%;
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    padding: 8px;
-    height: 10vh;
-}
 .fixed-nav {
-    /* background-color: #272727; */
     position: fixed;
-    margin-top: 7vh;
     width: 20vw;
     height: 100%;
     z-index: 999;
-    overflow-y: auto; /* Allow scrolling within the navbar if needed */
+    overflow-y: hidden;
     font-size: 1.5rem;
     box-sizing: border-box;
 }
@@ -165,13 +154,11 @@ body{
 .grid nav li{
     margin: 7vh 2vh 7vh 2vh;
     padding: 20px 0px 20px 0px;
-    /* border: 2px solid whitesmoke; */
     transition: .4s ease-in-out;
     cursor: pointer;
 }
 
 .content{
-    /* margin-top: 10vh; */
     top: 10vh;
     margin-left: 20vw;
     width: 76vw;
@@ -184,13 +171,10 @@ body{
 .grid{
     display: grid;
     grid-template-columns: 1fr 6fr;
-    /* outline: solid red 2px; */
     text-align: center;
 }
 .grid main section{ 
-    /* margin: 20px; */
     padding: 12px 0px 12px;
-    /* border: 2px solid whitesmoke; */
 } 
 
 .cards{
@@ -206,31 +190,11 @@ body{
     margin: 20px;
     padding: 20px;
     border-radius: 20px;
-    /* border: 1px solid blue; */
-}
-
-
-
-
-
-.footer{
-    margin-left: 20vw;
-    margin: 20px;
-    text-align: left;
-}
-
-
-/* card 2 */
-.headings{
-    margin: 10px;
-    margin-top: 60px;
-    text-decoration: underline;
-    font-size: 4rem;
-    /* text-shadow: 0 0 10px #1b1a1a, 0 0 20px #0e0d0d, 0 0 30px brown, 0 0 40px brown; */
 }
 
 .card2{
     width: 18vw;
+    height: 34vw;
     background-color: whitesmoke;
     color: black;
     border: 1px solid brown;
@@ -241,7 +205,7 @@ body{
 }
 
 .image img{
-    width: 16vw;
+    width: 16.5vw;
     margin: 2px 1px 20px 1px;
     border-radius: 10px;
 }
@@ -250,7 +214,6 @@ body{
     margin: 5px 10px 20px 0px;
 }
 .capsules span{
-    /* margin: 20px 10px 10px 0px; */
     background-color: #E1F5FE;
     border-radius: 8px;
     padding: 0px 2px 0px 2px;
@@ -281,4 +244,46 @@ body{
 }
 .download-btn:hover {
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #FF652F, 0 0 40px #FF65;
+}
+
+.footer {
+    margin-top: 40px;
+    display: flex;
+    background-color: rgb(59, 55, 55);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    justify-content: left;
+}
+
+.footer h2 {
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: normal;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content p a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer p {
+    margin: 10px 0;
+}
+
+.social-media a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.social-media a:hover {
+    text-decoration: underline;
 }
